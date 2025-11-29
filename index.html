@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Website with Vertical Nav</title>
+    <link rel="stylesheet" href="./Card.css">
+    <div class="container">
+         <img src="./images/AS.gif" alt="Khurram" width="100%"; height = "50"; align = "center">
+
+    </div>
+    
+    <div class="container">
+         <img src="./images/grocery-banner_1.jpg" alt="Khurram" width="100%"; height = "200"; align = "center">
+
+    </div>
+    <div class="container">
+    <header>
+   <center>
+        <!-- The image has scrolling behavior to left -->
+        <marquee behavior="scroll" direction="left">
+            <img src="./images/fresh-products-banner.jpg" width = "700px" height = "170px" alt="GeeksforGeeks logo">
+            <img src="./images/lux_generic_desktop_copy.jpg" width = "700px" height = "170px" alt="GeeksforGeeks logo">
+            <img src="./images/winter-essentials-banner.jpg"width = "700px" height = "170px"  alt="GeeksforGeeks logo">
+            <img src="./images/gulfa_desktop.jpg"width = "700px" height = "170px"  alt="GeeksforGeeks logo">
+            <img src="./images/clarin_desktop.jpg"width = "700px" height = "170px"  alt="GeeksforGeeks logo">
+            <img src="./images/size-02_77_.jpg"width = "700px" height = "170px"  alt="GeeksforGeeks logo">    
+            <img src="./images/size-02_84_.jpg"width = "700px" height = "170px"  alt="GeeksforGeeks logo">
+            <img src="./images/ssss.jpg"width = "700px" height = "170px"  alt="GeeksforGeeks logo">
+
+        </marquee>
+
+        <!-- The image has scrolling behavior to the upper direction. 
+        <marquee behavior="scroll" direction="up" "right">
+            <img src="./images/khurramLogo.png"width ="50px" alt="GeeksforGeeks logo">
+        </marquee>-->
+    </center>
+    </header>
+</div>
+    <style>
+        /* Reset default margins and paddings */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Header styling */
+        header {
+            overflow-x: auto; /* Enables horizontal scrollbar */
+            white-space: nowrap; /* Prevents line breaks */
+            width: 108%;
+            height: 200px;
+            padding-top: 0px;
+            text-align: center;
+            padding: 2px;
+        }
+
+        /* Layout container for nav + content */
+        .container {
+            flex: 1;
+            display: flex;
+        }
+
+        /* Vertical navigation bar */
+        nav {
+            width: 23%;
+            background-image: url('./images/navimage1.png'); width:"10px"; height:"300px";
+            display: flex;
+            flex-direction: column;
+            background-image: fixed;
+            background-color: rgba(33, 209, 180, 0.377);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        nav a {
+            color: rgb(133, 13, 13);
+            padding: 16px;
+            font-size: x-large;
+            font-weight: bolder;
+            text-decoration: none;
+            border-bottom: 1px solid #3743e0;
+            transition: background 0.3s;
+
+        }
+
+        nav a:hover {
+            background-color: #cbe009b0;
+        }
+
+        /* Main content area */
+        main {
+            background-image: url('./images/cart9\ \(1\).png');  width:"300px"; height:"300px";
+            display: flex;
+            height: 1200px;
+            width: 100%;
+            background-image: fixed;
+            background-color: rgb(220, 210, 230);
+            background-repeat: no-repeat;
+            flex: 1;
+            padding-top: 0px;
+            padding-left: 0px;
+            background-size: cover;
+            
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #c1e00d88;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            height: 20px;
+        }
+
+        /* Responsive: stack nav on top for small screens */
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column;
+            }
+            nav {
+                width: 15%;
+                height: 1200px;
+                flex-direction: row;
+                overflow-x: auto;
+            }
+            nav a {
+                flex: 1;
+                text-align: center;
+                border-bottom: none;
+               
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <nav>
+            <a href="#">Home</a>
+            <a href="./Electronics.html">Electronics</a>
+            <a href="#">Pharmacy</a>
+            <a href="#">Groceries-Pets </a>
+            <a href="#">Women's Fession</a>
+        </nav>
+
+        <main>
+               <html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple E-Commerce Product Cards</title>
+<link rel="stylesheet" href="./Card.css">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #a03b3b;
+        margin: 10;
+        padding: 20px;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        justify-content: center;
+    }
+
+    
+</style>
+</head>
+<body>
+<Div class = "card">
+        <img class="card-img" src="./images/watch.png" alt="Watch">
+        <div class="card-content">
+            <b><h1 font-color ="red"; align = "center"> RADDO WATCHES</h1></b>
+            <p class="price"> PKR-2900 <p>
+            size: <input type = "radio" name = "Medium" size ""> Medium <input type = "radio" name = "Large" size ""> Large <input type = "radio" name = "X-Large" size ""> X-Large
+            <br></br>
+            Color: <input type = "checkbox" name = "Brown" size ""> Brown <input type = "checkbox" name = "Black" size ""> Black <input type = "checkbox" name = "grey" size ""> grey 
+            <div class="showcase">
+        <div>
+            <button class="custom-btn btn-1">ADD TO CART</button><float: left;>
+            <button class="custom-btn btn-2">RESET</button>
+        </div>
+        </div>
+</Div>
+</Div>
+<Div class = "card">
+        <img class="card-img" src="./images/watch1.png" alt="Watch">
+        <div class="card-content">
+            <b><h1 font-color ="red"; align = "center"> RADDO WATCHES</h1></b>
+            <p class="price"> PKR-2900 <p>
+             size: <input type = "radio" name = "Medium" size ""> Medium <input type = "radio" name = "Large" size ""> Large <input type = "radio" name = "X-Large" size ""> X-Large
+             <br></br>  
+            Color: <input type = "checkbox" name = "Brown" size ""> Brown <input type = "checkbox" name = "Black" size ""> Black <input type = "checkbox" name = "grey" size ""> grey 
+             <div class="showcase">
+        <div>
+           
+            <button class="custom-btn btn-1">ADD TO CART</button><float: left;>
+            <button class="custom-btn btn-2">RESET</button>
+        </div>
+        </div>
+</Div>
+</Div>
+
+
+</body>
+</html>
+
+         
+            
+       
